@@ -1,0 +1,30 @@
+{
+  "name": "sedang-menulis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node ./src/index.js --presets es2015,stage-2",
+    "compile": "babel ./src --out-dir ./es5 --presets es2015",
+    "build": "npm run compile && pkg . --out-path ./build/"
+  },
+  "bin": "./es5/index.js",
+  "author": "Iqbal Rifai",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chalk": "^2.3.0",
+    "cheerio": "^1.0.0-rc.2",
+    "crypto": "^1.0.1",
+    "dev": "^0.1.3",
+    "lodash": "^4.17.4",
+    "prompt-input": "^3.0.0",
+    "prompt-password": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
